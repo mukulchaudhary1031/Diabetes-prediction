@@ -47,4 +47,4 @@ def predict(request: Request,
 
     # Return HTML with result
     return templates.TemplateResponse("index.html",
-                                      {"request": request, "result": result})
+                                      {"request": request, "result": result, "prediction":prediction})
